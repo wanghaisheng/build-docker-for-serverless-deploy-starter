@@ -1,0 +1,26 @@
+{
+  "log": {
+    "access": "/var/log/xray/access.log",
+    "error": "/var/log/xray/error.log",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 8001,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b50ca23d-eb7d-4c1a-84e5-5df8766825e3"
+          }
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
